@@ -14,12 +14,14 @@ Pkg.add(url = "https://github.com/profesorpaiche/Chromatography.jl")
 
 ## Example
 
-Here is a simple example with a ![random image from IKEA](https://www.ikea.com/ca/en/images/products/mala-chalk-mixed-colors__1085507_pe860123_s5.jpg).
+Here is a simple example with a [random image from IKEA](https://www.ikea.com/ca/en/images/products/mala-chalk-mixed-colors__1085507_pe860123_s5.jpg).
 You can download the image from the terminal with:
 
 ```
 wget https://www.ikea.com/ca/en/images/products/mala-chalk-mixed-colors__1085507_pe860123_s5.jpg -O chalk.jpg
 ```
+
+<img src="https://www.ikea.com/ca/en/images/products/mala-chalk-mixed-colors__1085507_pe860123_s5.jpg" width="200" height="200">
 
 And with Julia, let's extract and visualize the 9 more frequent colors.
 
@@ -34,3 +36,5 @@ colors = colorFrequency(img)
 main_colors = extractColors(colors, 9)
 imshow(reshape(main_colors, (3, 3)))
 ```
+
+
